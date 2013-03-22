@@ -1,0 +1,14 @@
+<h1>Scholarship Grants</h1>
+
+<div id="masonry-container">
+<% @scholarshipgrants.each do |scholarshipgrant| %>
+<div class="box">
+    <h6> <%= link_to scholarshipgrant.scholarship , scholarshipgrant %></h6><p><%= scholarshipgrant.organization  %></p>
+   
+    
+  
+</div>
+
+<% end %>
+
+</div>

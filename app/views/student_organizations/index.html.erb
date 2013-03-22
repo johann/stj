@@ -1,0 +1,27 @@
+<h2>Student Organizations</h2>
+
+
+<div id="masonry-container">
+<% @student_organizations.each do |student_organization| %>
+<div class="box">
+   <h6 id="fit"><Span class="head"> <%= link_to student_organization.name, student_organization %></span></h6>
+   
+
+    <!---<%= student_organization.description %>
+    <%= student_organization.gpa %>
+    
+   <%= link_to "More Info", student_organization.infourl, :class => '' %>-->
+     <!--
+    <%= link_to "Apply", student_organization.applyurl %>  
+    <%= link_to 'Show', student_organization %>
+    <%= link_to 'Edit', edit_student_organization_path(student_organization) %>
+    <%= link_to 'Destroy', student_organization, confirm: 'Are you sure?', method: :delete %>
+-->
+    <br></li>
+</div>
+
+<% end %>
+
+</div>
+
+

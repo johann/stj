@@ -1,0 +1,22 @@
+<h1>Greek Organizations</h1>
+
+<div id="masonry-container">
+<% @greek_organizations.each do |greek_organization| %>
+<div class="box">
+   <h5 id="fit"> <%= link_to greek_organization.name, greek_organization %></h5>
+    <!-- <%= greek_organization.description  %> 
+    <%= greek_organization.gpa %> -->
+    
+    <!--<%= link_to "More Info", greek_organization.applyurl, :class => '' %>
+     
+    <%= link_to "Apply", greek_organization.applyurl %>  
+    <%= link_to 'Show', greek_organization %>
+    <%= link_to 'Edit', edit_greek_organization_path(greek_organization) %>
+    <%= link_to 'Destroy', greek_organization, confirm: 'Are you sure?', method: :delete %>
+-->
+    <br></li>
+</div>
+
+<% end %>
+
+</div>

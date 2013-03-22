@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Organization:</b>
+  <%= @other.organization %>
+</p>
+
+<p>
+  <b>Program:</b>
+  <%= @other.program %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @other.description %>
+</p>
+
+<p>
+  <b>Gpa:</b>
+  <%= @other.gpa %>
+</p>
+
+<p>
+  <b>Infourl:</b>
+  <%= @other.infourl %>
+</p>
+
+<p>
+  <b>Applyurl:</b>
+  <%= @other.applyurl %>
+</p>
+
+
+<%= link_to 'Edit', edit_other_path(@other) %> |
+<%= link_to 'Back', others_path %>

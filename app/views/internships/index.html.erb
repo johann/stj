@@ -1,0 +1,24 @@
+<h3>Internships</h3>
+
+<div id="masonry-container">
+<% @internships.each do |internship| %>
+<div class="box">
+   
+    <h6 id="fit"><Span class="head"> <%= link_to internship.program, internship %></span></h6>
+
+   <p> <%= internship.organization%><p>
+
+    <!--
+    <%= internship.description %>
+
+
+    <%= internship.gpa %>
+    <%= internship.infourl %>
+    <%= internship.applyurl %>
+    -->
+  
+</div>
+
+<% end %>
+
+</div>

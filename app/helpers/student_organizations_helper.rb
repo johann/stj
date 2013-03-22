@@ -1,0 +1,2 @@
+module StudentOrganizationsHelper
+end

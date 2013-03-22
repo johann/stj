@@ -1,0 +1,14 @@
+<h1>University Honor Societies</h1>
+<div id="masonry-container">
+<% @university_honor_societies.each do |university_honor_society| %>
+<div class="box">
+   <h6> <%= link_to university_honor_society.organization, university_honor_society.infourl  %></h6>
+    <%= university_honor_society.description %>
+    <%= university_honor_society.gpa %>
+    
+    
+</div>
+
+<% end %>
+
+</div>

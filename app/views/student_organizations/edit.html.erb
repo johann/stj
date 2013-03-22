@@ -1,0 +1,8 @@
+<h5>Student Organizations</h5>
+
+<% if user_signed_in? %>
+
+<%= render 'form' %>
+<% end %>
+<%= link_to 'Show', @student_organization %> |
+<%= link_to 'Back', student_organizations_path %>

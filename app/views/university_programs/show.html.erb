@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @university_program.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @university_program.description %>
+</p>
+
+<p>
+  <b>Gpa:</b>
+  <%= @university_program.gpa %>
+</p>
+
+<p>
+  <b>Infourl:</b>
+  <%= @university_program.infourl %>
+</p>
+
+<p>
+  <b>Applyurl:</b>
+  <%= @university_program.applyurl %>
+</p>
+
+
+<%= link_to 'Edit', edit_university_program_path(@university_program) %> |
+<%= link_to 'Back', university_programs_path %>

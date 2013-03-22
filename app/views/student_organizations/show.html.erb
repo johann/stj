@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h4><%= @student_organization.name %></h4>
+<p>Mission:<%= @student_organization.description %></p>
+
+
+
+
+<p>
+  <b>Required Gpa:</b>
+  <%= @student_organization.gpa %>
+</p>
+<!--
+<p>
+  <b>Infourl:</b>
+  <%= @student_organization.infourl %>
+</p>
+-->
+
+<%= link_to 'More info', @student_organization.infourl %>
+
+<hr/>
+
+
+<% if user_signed_in? %>
+     <%= link_to 'Edit', edit_student_organization_path(@student_organization) %>
+ <% end %>
+<!--
+  | -->
+<%= link_to 'Back', student_organizations_path %>

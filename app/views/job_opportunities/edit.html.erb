@@ -1,0 +1,15 @@
+
+<% if user_signed_in? %>
+<h1>Edit Job Opportunity</h1>
+<%= render 'form' %>
+
+
+
+<%= link_to 'Show', @job_opportunity %> |
+<%= link_to 'Back', job_opportunities_path %>
+
+
+<% else  %>
+
+<%= render 'four' %>
+<% end %>

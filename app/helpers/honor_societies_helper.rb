@@ -1,0 +1,2 @@
+module HonorSocietiesHelper
+end

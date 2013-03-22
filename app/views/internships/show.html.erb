@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+
+<h5><%= @internship.program %> |  <%= @internship.organization %></h5>
+<p><%= @internship.description %></p>
+
+<% if user_signed_in? %>
+<%= link_to 'Edit', edit_internship_path(@internship) %> 
+<% end %>
+
+
+<%= link_to 'Back', internships_path %>
+
+<!--
+<p>
+  <b>Gpa:</b>
+  <%= @internship.gpa %>
+</p>
+
+<p>
+  <b>Infourl:</b>
+  <%= @internship.infourl %>
+</p>
+
+<p>
+  <b>Applyurl:</b>
+  <%= @internship.applyurl %>
+</p>
+
+-->
+
+
+

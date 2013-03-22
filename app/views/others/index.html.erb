@@ -1,0 +1,19 @@
+<h1>Other</h1>
+<div id="masonry-container">
+
+<% @others.each do |other| %>
+<div class="box">
+    <h6> <%= other.program%></h6>
+
+    <%= other.organization %> 
+    <%= other.description %>
+    <%= other.gpa %>
+    <%= other.infourl %>
+    <%= other.applyurl %>
+    
+  
+</div>
+
+<% end %>
+
+</div>

@@ -1,0 +1,14 @@
+<h1>University Programs</h1>
+<div id="masonry-container">
+<% @university_programs.each do |university_program| %>
+<div class="box">
+   <h6> <%= link_to university_program.name, university_program.infourl  %></h6>
+    <%= university_program.description %>
+    <%= university_program.gpa %>
+    
+    
+</div>
+
+<% end %>
+
+</div>

@@ -1,0 +1,22 @@
+<h3>Graduate Assistantships</h3>
+
+<div id="masonry-container">
+<% @graduate_assistantships.each do |graduate_assistantship| %>
+<div class="box">
+    <h4> <%= link_to graduate_assistantship.department, graduate_assistantship  %></h4>
+    
+
+    <!--
+    <%= graduate_assistantship.description %>
+    <%= graduate_assistantship.gpa %>
+    <%= link_to 'Destroy', graduate_assistantship, method: :delete %>
+
+  -->
+
+  
+</div>
+
+<% end %>
+
+</div>
+

@@ -72,7 +72,7 @@ class UpcomingsController < ApplicationController
 
   def import
     Upcoming.import(params[:file])
-    redirect_to upcomings_url, notice: "University Programs imported."
+    redirect_to root_url, notice: "University Programs imported."
   end
 
   # DELETE /upcomings/1

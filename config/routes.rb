@@ -1,6 +1,14 @@
 Sop::Application.routes.draw do
   
 
+  resources :upcomings do
+    collection { post :import }
+  end
+
+  resources :tests do
+    collection { post :import }
+  end
+
   get 'tags/:tag', to: 'honor_societies#index', as: :tag
 
   resources :scholarshipgrants do

@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h4><%= @test.name %></h4>
+<p>Mission:<%= @test.description %></p>
+
+<p>
+  <b>Required Gpa:</b>
+  <%= @test.gpa %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @test.due %>
+</p>
+
+
+<%= link_to 'Edit', edit_test_path(@test) %> |
+<%= link_to 'Back', tests_path %>

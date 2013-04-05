@@ -1,0 +1,5 @@
+<%= form_tag import_tests_path, :class => 'form-inline', multipart: true do  %>
+ 
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import", :class => "btn" %>
+<% end %>

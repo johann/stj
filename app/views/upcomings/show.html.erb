@@ -1,0 +1,16 @@
+<p><%= @upcoming.organization %>
+
+<p><%= @upcoming.description %></p>
+<p>GPA <%= @upcoming.gpa %></p>
+
+
+
+<p>Date:<span class="label"> <%= @upcoming.date %></span></p>
+
+
+<% if user_signed_in? %>
+
+<%= link_to 'Edit', edit_upcoming_path(@upcoming) %>
+
+<% end %>
+<%= link_to 'Back', upcomings_path %>

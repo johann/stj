@@ -1,0 +1,17 @@
+<h2>Test</h2>
+
+
+<div id="masonry-container">
+<% @tests.each do |test| %>
+<div class="box">
+   <h6 id="fit"><Span class="head"> <%= link_to test.name, test %></span></h6>
+   
+
+    <br></li>
+</div>
+
+<% end %>
+
+</div>
+
+<%= link_to 'New Test', new_test_path %>

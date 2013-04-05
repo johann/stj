@@ -1,16 +1,13 @@
-class StudentOrganization < ActiveRecord::Base
-attr_accessible :description, :gpa, :infourl, :name
-
- 
-
-def self.import(file)
+class Test < ActiveRecord::Base
+	attr_accessible :description, :gpa, :infourl,:due, :name
+	def self.import(file)
   spreadsheet = open_spreadsheet(file)
   header = spreadsheet.row(1)
   (2..spreadsheet.last_row).each do |i|
     row = Hash[[header, spreadsheet.row(i)].transpose]
-    test = find_by_id(row["id"]) || new
-   	test.attributes = row.to_hash.slice(*accessible_attributes)
-    test.save!
+    student_organization = find_by_id(row["id"]) || new
+   	student_organization.attributes = row.to_hash.slice(*accessible_attributes)
+    student_organization.save!
   end
 end
 
@@ -22,4 +19,7 @@ def self.open_spreadsheet(file)
   else raise "Unknown file type: #{file.original_filename}"
   end
 end
+
+
+
 end

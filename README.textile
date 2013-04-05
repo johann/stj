@@ -1,80 +1,18 @@
-h1. Sop
+h1. Student Opportunities Page
 
-This application was generated with the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem provided by the "RailsApps Project":http://railsapps.github.com/.
+h2. Purpose
 
-h2. Diagnostics
+The Student Opportunities Page is a dynamic website that will be used for displaying a range of Student Opportunities, Scholarships and Organizations that students can be a part of. The current system we deemed to be ineffective and also not visually appealing so we are working at finding ways to optimize it whilst making it visually appealing
+Previous System
 
-This application was built with recipes that are known to work together.
+The Student Opportunities Page used to be a google doc that we styled and manually entered data into a spreadsheet. Whilst this was easy and free to create it was not visually appealing and wasn’t the most effective method of displaying this information
+Rails Implementation
 
-This application was built with preferences that are NOT known to work together.
+I made the decision to create a simple Ruby on Rails version of the Student Opportunities Page that my boss and I could easily update and manage. One of the biggest challenges that lies ahead is figuring out how to update the system with the google Doc information. I am thinking of tackling this in one of two ways.
+a) We could find a way to simply include the CSV files into the system and have it read from within
+b) We could find a way to provide a means for an administrator to upload csv files into the system and then append them to the current file system.
 
-If the application doesn't work as expected, please "report an issue":https://github.com/RailsApps/rails_apps_composer/issues and include these diagnostics:
+We will starter with the first option and then move onto the second.
+Future
 
-We'd also like to know if you've found combinations of recipes or preferences that do work together.
-
-Recipes:
-["controllers", "core", "email", "extras", "frontend", "gems", "git", "init", "models", "prelaunch", "railsapps", "readme", "routes", "saas", "setup", "testing", "views"]
-
-Preferences:
-{:git=>true, :railsapps=>"none", :dev_webserver=>"webrick", :database=>"sqlite", :templates=>"erb", :unit_test=>"rspec", :integration=>"rspec-capybara", :fixtures=>"factory_girl", :frontend=>"bootstrap", :bootstrap=>"sass", :email=>"none", :authentication=>"devise", :devise_modules=>"default", :authorization=>"cancan", :form_builder=>"simple_form", :starter_app=>"admin_app", :quiet_assets=>true, :local_env_file=>true}
-
-h2. Ruby on Rails
-
-This application requires:
-
-* Ruby version 1.9.3
-* Rails version 3.2.1
-
-Learn more about "Installing Rails":http://railsapps.github.com/installing-rails.html.
-
-h2. Database
-
-This application uses SQLite with ActiveRecord.
-
-h2. Development
-
-* Template Engine: ERB
-* Testing Framework: RSpec and Factory Girl
-* Front-end Framework: Twitter Bootstrap (Sass)
-* Form Builder: SimpleForm
-* Authentication: Devise
-* Authorization: CanCan
-
-
-
-
-
-h2. Getting Started
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-h2. Documentation and Support
-
-This is the only documentation.
-
-h4. Issues
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-h2. Similar Projects
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-h2. Contributing
-
-If you make improvements to this application, please share with others.
-
-* Fork the project on GitHub.
-* Make your feature addition or bug fix.
-* Commit with Git.
-* Send the author a pull request.
-
-If you add functionality to this application, create an alternative implementation, or build an application that is similar, please contact me and I'll add a note to the README so that others can find your work.
-
-h2. Credits
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-h2. License
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+The future of The Student Opportunities Page includes implementing Backbonejs for the frontend to improve the frontend. Also we would like to provide a slightly different system for mobile views.

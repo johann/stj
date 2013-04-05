@@ -1,0 +1,20 @@
+<h2>Upcoming</h2>
+
+
+<div id="masonry-container">
+
+    
+<% @upcomings.each do |upcoming| %>
+<div class="box">
+   <h6 id="fit"><Span class="head"> <%= link_to upcoming.organization, upcoming %></span></h6>
+   <p><%= upcoming.date %></p>
+   
+
+   
+</div>
+
+<% end %>
+
+</div>
+
+

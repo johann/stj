@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p><%= @honor_society.name %></p>
+<h4><%= @honor_society.name %></h4
 <P><%= @honor_society.description %></P>
+<!--
 <p><%= @honor_society.mission %></p>
  
 <P><%= @honor_society.orgsync %></P>
@@ -9,12 +10,17 @@
 <P><%= @honor_society.infourl %></P>
 <P><%= @honor_society.applyurl %></P>
 <P><%= @honor_society.major %></P>
+-->
+<%= link_to 'More info', @honor_society.infourl %>
+
+<hr/>
 
 
+<% if user_signed_in? %>
+     <%= link_to 'Edit', edit_honor_society_path(@honor_society) %>
+ <% end %>
  
  
   
  
-
-<%= link_to 'Edit', edit_honor_society_path(@honor_society) %> |
 <%= link_to 'Back', honor_societies_path %>
